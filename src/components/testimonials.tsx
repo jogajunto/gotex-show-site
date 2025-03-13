@@ -13,7 +13,7 @@ import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 
 import { Testimonial } from "@/components/testimonial";
 
-export default function Testimonials() {
+export function Testimonials() {
   const heroSwiperOptions: SwiperProps = {
     modules: [Pagination, A11y, EffectFade],
     effect: "fade",

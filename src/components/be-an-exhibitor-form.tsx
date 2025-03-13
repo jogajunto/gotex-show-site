@@ -8,7 +8,7 @@ import { Button } from "@/components/button";
 import { Textarea } from "@/components/textarea";
 import { Checkbox } from "@/components/checkbox";
 
-export default function BeAnExhibitorForm() {
+export function BeAnExhibitorForm() {
   const initialFormState = {
     name: "",
     email: "",

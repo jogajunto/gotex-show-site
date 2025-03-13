@@ -11,16 +11,17 @@ import { EventAttributes } from "@/components/event-attributes";
 import { IconList } from "@/components/icon-list";
 import { Partners } from "@/components/partners";
 import { Table } from "@/components/table";
+import { BeAnExhibitorForm } from "@/components/be-an-exhibitor-form";
+import { Testimonials } from "@/components/testimonials";
 
-import BeAnExhibitorForm from "@/components/be-an-exhibitor-form";
-import Testimonials from "@/components/testimonials";
+import imageHero from "@/public/2025/images/seja-um-expositor/hero.webp";
 
 export default function Page() {
   return (
     <main>
       <section className="bg-secondary relative z-0">
         <div className="relative -z-10">
-          <Image className="h-60 w-full object-cover md:h-80" src="/2025/images/seja-um-expositor/hero.webp" alt="Pessoas no evento da Gotex Show" width={1200} height={320} />
+          <Image className="h-60 w-full object-cover md:h-80" src={imageHero} placeholder="blur" alt="Pessoas no evento da Gotex Show" width={1200} height={320} />
           <div className="absolute bottom-0 left-0 h-1/2 w-full bg-gradient-to-t from-black"></div>
         </div>
         <div className="bg-default container -mt-24 md:bg-transparent">
