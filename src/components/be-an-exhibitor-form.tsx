@@ -90,23 +90,25 @@ export default function BeAnExhibitorForm() {
       <Input label="E-mail" name="email" type="email" placeholder="Seu e-mail" value={formData.email} onChange={handleChange} required />
       <Input label="Telefone" name="phone" type="tel" placeholder="+55 (99) 9999-9999" value={formData.phone} onChange={handleChange} required />
       <Input label="Empresa" name="company" type="text" placeholder="Nome da sua empresa" value={formData.company} onChange={handleChange} required />
-      <div className="col-span-2">
+      <div className="md:col-span-2">
         <Textarea label="Mensagem" name="message" placeholder="Insira a sua mensagem" value={formData.message} onChange={handleChange} required />
       </div>
-      <div className="col-span-2 hidden">
+      <div className="hidden md:col-span-2">
         <Input label="Hidden" name="hiddenField" type="text" value={formData.hiddenField} onChange={handleChange} />
       </div>
-      <div className="col-span-2">
+      <div className="md:col-span-2">
         <div className="flex items-center space-x-2">
           <Checkbox id="terms" checked={formData.terms} onChange={handleCheckboxChange}>
-            Li e concordo com a
-            <Link href="/politica-de-privacidade" className="underline">
-              Políticas de Privacidade
-            </Link>
+            <span>
+              Li e concordo com a
+              <Link href="/politica-de-privacidade" className="underline">
+                Políticas de Privacidade
+              </Link>
+            </span>
           </Checkbox>
         </div>
       </div>
-      <footer className="col-span-2 flex flex-col-reverse justify-end gap-4 md:flex-row">
+      <footer className="flex flex-col-reverse justify-end gap-4 md:col-span-2 md:flex-row">
         {successMessage && (
           <div className="text-default flex items-center gap-2">
             <CheckCircle className="icon-brand inline-block size-6" />
