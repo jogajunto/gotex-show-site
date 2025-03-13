@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { CheckCircle, Loader, XCircle } from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
 import { Input } from "@/components/input";
 import { Button } from "@/components/button";
 import { Textarea } from "@/components/textarea";
