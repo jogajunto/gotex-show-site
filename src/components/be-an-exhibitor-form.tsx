@@ -21,12 +21,12 @@ export default function BeAnExhibitorForm() {
 
   const [formData, setFormData] = useState(initialFormState);
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const [successMessage, setSuccessMessage] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string>("Form submitted successfully");
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     if (successMessage) {
-      const timer = setTimeout(() => setSuccessMessage(""), 3000);
+      const timer = setTimeout(() => setSuccessMessage(""), 5000);
       return () => clearTimeout(timer);
     }
   }, [successMessage]);
@@ -106,29 +106,24 @@ export default function BeAnExhibitorForm() {
           </Checkbox>
         </div>
       </div>
-      <footer className="col-span-2 flex justify-end">
-        <Button variant="primary" size="md" type="submit" disabled={loading}>
-          {loading ? (
-            <span className="flex items-center gap-2">
-              <Loader className="animate-spin" />
-              Enviando
-            </span>
-          ) : (
-            <span>Enviar</span>
-          )}
-        </Button>
+      <footer className="col-span-2 flex flex-col-reverse justify-end gap-4 md:flex-row">
         {successMessage && (
-          <div className="flex items-center gap-2">
-            <CheckCircle className="text-primary inline-block h-6 w-6" />
+          <div className="text-default flex items-center gap-2">
+            <CheckCircle className="icon-brand inline-block size-6" />
             {successMessage}
           </div>
         )}
         {errorMessage && (
-          <div className="flex items-center gap-2">
-            <XCircle className="text-error-light inline-block h-6 w-6" />
+          <div className="text-default flex items-center gap-2">
+            <XCircle className="icon-danger inline-block h-6 w-6" />
             {errorMessage}
           </div>
         )}
+        <div>
+          <Button variant="primary" size="md" type="submit" disabled={loading}>
+            {loading ? <span className="flex items-center gap-2">Enviando...</span> : <span>Enviar</span>}
+          </Button>
+        </div>
       </footer>
     </form>
   );
