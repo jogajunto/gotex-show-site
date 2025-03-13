@@ -23,7 +23,6 @@ export const menu = [
       { label: "Seja um expositor", href: "/seja-um-expositor" },
       { label: "Tipos de cota", href: "/seja-um-expositor/#tipos-de-cotas" },
       { label: "Business Lounge", href: "/business-lounge" },
-      { label: "Área restrita", href: "/" },
     ],
   },
 ];
