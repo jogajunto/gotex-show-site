@@ -103,7 +103,6 @@ export default function Header() {
                 </ul>
               </nav>
             </div>
-            <LanguageSelector />
             <button className="text-default flex size-8 cursor-pointer items-center justify-center" type="button" ref={toggleRef} onClick={toggleMenu} aria-label={isOpen ? "Fechar" : "Abrir"} aria-controls="menu" {...(isOpen ? { "aria-expanded": "true" } : { "aria-expanded": "false" })}>
               {isOpen ? <X className="size-5" /> : <MenuIcon className="size-5" />}
             </button>
