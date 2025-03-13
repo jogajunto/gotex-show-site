@@ -13,7 +13,6 @@ import { useFocusTrap } from "@/hooks/useFocusTrap";
 import { useEscapeKey } from "@/hooks/useEscapeKey";
 
 import { Button } from "@/components/button";
-import { LanguageSelector } from "@/components/language-selector";
 import { Social } from "@/components/social";
 import { Topbar } from "./topbar";
 
