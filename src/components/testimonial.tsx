@@ -10,7 +10,7 @@ type TestimonialProps = {
 
 export function Testimonial({ children, name, role, company }: TestimonialProps) {
   return (
-    <div className="bg-default overflow-hidden rounded-lg">
+    <div className="bg-default h-full overflow-hidden rounded-lg">
       <ColoredLine />
       <div className="p-10">
         <blockquote className="text-default flex flex-col gap-4 text-center text-balance italic">
