@@ -67,7 +67,7 @@ export default function Header() {
   return (
     <header className={`grid grid-rows-[auto_1fr] ${isOpen ? "h-svh overflow-auto" : "h-auto"}`}>
       <Topbar />
-      <div className={`grid py-6`} ref={menuRef}>
+      <div className={`grid py-4`} ref={menuRef}>
         <div className="container flex flex-col">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-1 items-center justify-between">
@@ -91,12 +91,14 @@ export default function Header() {
                   </li>
                   <li>
                     <Button size="sm" variant="subtle" asChild>
-                      <Link href="/">Para expositores</Link>
+                      <Link href="/seja-um-expositor">Para expositores</Link>
                     </Button>
                   </li>
                   <li className="ml-2">
                     <Button size="sm" variant="primary" asChild>
-                      <Link href="/">Inscreva-se gratuitamente</Link>
+                      <Link href="https://www.sympla.com.br/evento/gotex-show-2025/2620690" target="_blank" rel="noopener noreferrer">
+                        Inscreva-se gratuitamente
+                      </Link>
                     </Button>
                   </li>
                 </ul>

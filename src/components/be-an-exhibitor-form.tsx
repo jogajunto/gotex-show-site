@@ -21,7 +21,7 @@ export function BeAnExhibitorForm() {
 
   const [formData, setFormData] = useState(initialFormState);
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const [successMessage, setSuccessMessage] = useState<string>("Form submitted successfully");
+  const [successMessage, setSuccessMessage] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
@@ -100,8 +100,9 @@ export function BeAnExhibitorForm() {
         <div className="flex items-center space-x-2">
           <Checkbox id="terms" checked={formData.terms} onChange={handleCheckboxChange}>
             <span>
-              Li e concordo com a
+              Li e concordo com a{" "}
               <Link href="/politica-de-privacidade" className="underline">
+                {" "}
                 Políticas de Privacidade
               </Link>
             </span>

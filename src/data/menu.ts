@@ -12,6 +12,7 @@ export const menu = [
     title: "Para visitante",
     items: [
       { label: "Inscreva-se gratuitamente", href: "https://www.sympla.com.br/evento/gotex-show-2025/2620690", external: true },
+      { label: "Business Lounge", href: "/business-lounge" },
       { label: "Como chegar", href: "/como-chegar" },
       { label: "Palestras", href: "/palestras" },
       { label: "Expositores", href: "/expositores" },
@@ -22,7 +23,6 @@ export const menu = [
     items: [
       { label: "Seja um expositor", href: "/seja-um-expositor" },
       { label: "Tipos de cota", href: "/seja-um-expositor/#tipos-de-cotas" },
-      { label: "Business Lounge", href: "/business-lounge" },
     ],
   },
 ];
