@@ -15,6 +15,7 @@ import { BeAnExhibitorForm } from "@/components/be-an-exhibitor-form";
 import { Testimonials } from "@/components/testimonials";
 
 import imageHero from "@/public/2025/images/seja-um-expositor/hero.webp";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
   return (
